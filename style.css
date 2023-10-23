@@ -1,0 +1,758 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    /* color: whitesmoke; */
+    cursor: pointer;
+}
+body::-webkit-scrollbar{
+    width: 5px;
+    background-color:rgb(252,227,0);
+}
+
+.background{
+    height: 650vh;
+    width: 100%;
+    background-image: url(https://i.pinimg.com/564x/c8/1c/32/c81c3277457387303d3708dc408c5bf9.jpg);
+    background-position: center;
+    /* background-color: darkcyan; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.404);
+}
+nav{
+    height: 8vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    
+}
+nav >ul{
+    height: 8vh;
+    width: 100%;
+   margin: 0 2vw;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+}
+nav >ul >li{
+    cursor: pointer;
+    text-align: center;
+    padding: 1vh 0.3vw;
+    /* background-color: orange; */
+    display: flex;
+    color: rgb(213,193,139);
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Ysabeau Office', sans-serif;
+}
+.ri-search-line{
+    transform: translateX(5vw);
+    /* color: black; */
+}
+nav >ul >li >input{
+    outline: none;
+    margin-left: 3vw;
+    margin-right: 33vw;
+    border: none;
+    border-radius: 0.5vmax;
+    padding: 0.8vh 2.5vw;
+    color: rgb(213,193,139);
+    box-shadow: 0 0 .5vmax rgb(213,193,139);
+    background-color: transparent;
+}
+nav >ul >li >input::placeholder{
+    color: rgb(213,193,139);
+}
+nav >ul >li >details{
+   
+    height: 10vh;
+    border: none;
+    width: 10vw;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 6vh;
+    /* background-color: pink; */
+}
+nav >ul >li >details >ul{
+    /* list-style: none; */
+    margin-left: 4.5vw;    
+    width: 12vw;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: end;
+    backdrop-filter: blur(0.2vmax);
+    background-color: transparent;
+    /* background-color: palegreen; */
+}
+nav >ul >li >details >ul >li{
+    padding: 0.2vh 0;
+}
+
+
+
+/* ============== NAV COMPLETE ============== */
+
+/* ============== PAGE-1 START ============== */
+
+.page1{
+    height: calc(100vh - 8vh);
+    width: 100%;
+    display: flex;
+    /* background-color: aquamarine; */
+}
+.page1-left{
+    height: 92vh;
+    width: 50%;
+    /* background-color: palegoldenrod; */
+    background-image: url(./page1\ headphones.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.page1-right{
+    height: 92vh;
+    width: 50%;
+    /* background-color: darkblue; */
+
+}
+.page1-right >h1{
+    padding-top: 25vh;
+    padding-left: 5vmax;
+    /* background-color: palegreen; */
+    font-size: 6vmax;
+    text-shadow: .3vmax .3vmax .3vmax rgba(252, 227, 0, 0.39);
+    font-family: 'Ysabeau Office', sans-serif;
+    color: rgb(252,227,0);
+
+}
+.page1-right >p{
+    margin-left: 10vmax;
+    width: 35vmax;
+    line-height: 1.3vmax;
+    color: rgb(218, 208, 121);
+    font-size: 1.1vmax;
+    backdrop-filter: blur(1vmax);
+    font-family: 'Josefin Sans', sans-serif;
+    /* background-color: palevioletred; */
+    margin-top: 1.5vmax;
+}
+.page1-right >button{
+    margin-top: 5vh;
+    margin-left: 3vmax;
+    padding: 0.8vmax 1.5vmax;
+    border: none;
+    font-family: 'Ysabeau Office', sans-serif;
+    font-size: 1.5vmax;
+    border-radius: 1vmax;
+    background-color: black;
+    color: rgb(218, 208, 121);
+    box-shadow: 0.2vmax 0.2vmax 0.5vmax rgba(218, 208, 121, 0.493);
+   
+}
+
+/* ============== PAGE-1 COMPLETE ============== */
+
+/* ============== PAGE-2 START ============== */
+
+.page2{
+    height: 100vh;
+    width: 100%;
+    /* background-color: palegoldenrod; */
+    display: flex;
+}
+.page2-left{
+    height: 100vh;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: paleturquoise; */
+}
+.page2-left >ul{
+    list-style: none;
+}
+.page2-left >ul >li{
+    margin-bottom: 2vmax;
+}
+.page2-left >ul >li >h3{
+    font-size: 2.5vmax;
+    color: rgb(155,159,160);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.page2-left >ul >li >h5{
+    font-size: 1.5vmax;
+    color: rgba(155, 159, 160, 0.603);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+}
+.page2-right{
+    height: 100vh;
+    width: 70%;
+    background-image: url(./page2\ headphone\ driver.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* background-color: thistle; */
+    transition: all 2s ease;
+    display: flex;
+    justify-content: end;
+}
+.page2-right:hover{
+    animation: movee 3s linear forwards;
+    transition: all 3s ease;
+    
+}
+@keyframes movee {
+    0%{
+    transition: all 2s ease;
+        
+        background-position: left;
+    }
+    50%{
+    transition: all 1s ease;
+
+        background-position: right;
+    }
+    100%{
+    transition: all 2s ease;
+
+        background-position: center;
+    }
+}
+
+.page2-right-content{
+    height: 45vh;
+    width: 35vw;
+}
+.page2-right-content >h3{
+    font-size: 3vmax;
+    margin-bottom: 0.5vmax;
+    color: rgb(252,227,0);
+    text-shadow: .2vmax .2vmax .2vmax rgba(252, 227, 0, 0.548);
+    font-family: 'Ysabeau Office', sans-serif;
+}
+.page2-right-content >h1{
+    width: 25vw;
+    margin-bottom: 0.5vmax;
+    font-size: 2.5vmax;
+    color: rgba(155, 159, 160, 0.603);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+}
+.page2-right-content >p{
+    width: 31vw;
+    backdrop-filter: blur(.3vmax);
+    font-weight: 100;
+    color: rgb(155, 159, 160);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* ============== PAGE-2 COMPLETE ============== */
+
+/* ============== PAGE-3 START ============== */
+
+.page3{
+    height: 100vh;
+    width: 100%;
+    /* background-color: yellowgreen; */
+}
+.page3-heading{
+    height: 20vh;
+    width: 100%;
+    /* background-color: violet; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page3-heading >h1{
+    font-size: 4vmax;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(213,193,139);
+    text-shadow: .3vmax .3vmax .2vmax rgba(213, 193, 139, 0.322);
+    font-weight: 700;
+}
+.page3-contener{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: orange; */
+}
+.page3-box1, .page3-box2, .page3-box3{
+    height: 55vh;
+    width: 20%;
+    border-radius: 0.5vmax;
+    box-shadow: 0 0 0.5vmax rgba(213, 193, 139, 0.308);
+    /* background-color: red; */
+}
+.page3-box1{
+    background-image: url(./page3\ img1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+    position: relative;
+}
+.page3-box1-info{
+    height: 0vh;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 0),black);
+    backdrop-filter: blur(0.01vmax);
+    transition: all 0.8s cubic-bezier(.33,.92,.89,.32) ;
+    border-radius: 0.5vmax;
+
+}
+.page3-box-discreption{
+    color: yellow;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    animation: boxtext 2s linear both;
+}
+.page3-box-discreption >h1{
+    color: rgb(155,159,160);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.5vmax;
+}
+.page3-box-discreption >p{
+    font-weight: 100;
+    color: rgba(155, 159, 160, 0.603);
+    /* color: rgb(155, 159, 160); */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+@keyframes boxtext {
+    0%{
+        top: 0;
+    }
+    100%{
+        border: 0;
+    }
+}
+.page3-box1:hover .page3-box1-info{
+    height: 55vh;
+    
+}
+.page3-box2{
+    background-image: url(./page3\ img2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+    position: relative;
+
+}
+.page3-box2-info{
+    height: 0vh;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 0),black);
+    backdrop-filter: blur(0.01vmax);
+    transition: all 0.8s cubic-bezier(.33,.92,.89,.32) ;
+}
+.page3-box2:hover .page3-box2-info{
+    height: 55vh;
+    
+}
+
+.page3-box3{
+    background-image: url(./page3\ img3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+.page3-box3-info{
+    height: 0vh;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 0),black);
+    backdrop-filter: blur(0.01vmax);
+    transition: all 0.8s cubic-bezier(.33,.92,.89,.32) ;
+}
+.page3-box3:hover .page3-box3-info{
+    height: 55vh;
+    
+}
+
+/* ============== PAGE-3 COMPLETE ============== */
+
+/* ============== PAGE-4 START ============== */
+
+
+.page4{
+    height: 100vh;
+    width: 100%;
+    /* background-color: aquamarine; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page4-img-contener{
+    /* background-color: rebeccapurple; */
+    height: 80vh;
+    width: 55vw;
+    display: flex;
+    justify-content: space-between;
+}
+.page4-left{
+    margin-top: -10vh;
+    height: 90vh;
+    width: 20vw;
+    /* background-color: orange; */
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.page4-left-hedding{
+    height: 10vh;
+    width: 20vw;
+    /* background-color: red; */
+
+}
+.page4-left-hedding >h1{
+    color: rgb(213,193,139);
+    text-shadow: .2vmax .2vmax .1vmax rgba(213, 193, 139, 0.589);
+    font-family: 'Ysabeau Office', sans-serif;
+    font-size: 3.5vmax;
+    /* background-color: red; */
+}
+.page4-left-img1{
+    height: 30vh;
+    width: 15vw;
+    /* background-color: violet; */
+    background-image: url(https://i.pinimg.com/564x/0c/23/37/0c23373c3cdeff772dc7b166a4f948b5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: .5vmax;
+    transition: all 2s ease;
+}
+.page4-left-img1:hover{
+    transform: translateX(-3vmax);
+    box-shadow: 0 0 .5vmax rgba(213, 193, 139, 0.589);
+}
+
+.page4-left-img2{
+    height: 45vh;
+    width: 18vw;
+    /* background-color: yellow; */
+    background-image: url(https://i.pinimg.com/564x/5a/73/1b/5a731b58a6ed27330c09d4fee3544594.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: .5vmax;
+    transition: all 2s ease;
+}
+.page4-left-img2:hover{
+    transform: translate(-3vmax , 3vmax);
+    box-shadow: 0 0 .5vmax rgba(213, 193, 139, 0.589);
+}
+.page4-right{
+    /* background-color: rosybrown; */
+    width: 34vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.page4-right-top{
+    width: 34vw;
+    height: 25vh;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.page4-right-top-img1{
+    height: 29vh;
+    width: 13vw;
+    /* background-color: azure; */
+    background-image: url(https://i.pinimg.com/564x/6f/4e/be/6f4ebe3bfffdd1d0f187efeb08cd6911.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: .5vmax;
+    transition: all 2s ease;
+}
+.page4-right-top-img1:hover{
+    transform: translateY(-3vmax);
+    box-shadow: 0 0 .5vmax rgba(213, 193, 139, 0.589);
+
+}
+.page4-right-top-img2{
+    height: 22vh;
+    width: 18vw;
+    margin-right: 2vw;
+    /* background-color: wheat; */
+    background-image: url(https://i.pinimg.com/564x/9a/b1/4e/9ab14e15e60b36cb8decf60917a5e755.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: .5vmax;
+    transition: all 2s ease;
+}
+.page4-right-top-img2:hover{
+    transform: translate(3vmax , -3vmax);
+    box-shadow: 0 0 .5vmax rgba(213, 193, 139, 0.589);
+}
+.page4-right-middel{
+    width: 34vw;
+    height: 25vh;
+    /* background-color: aqua; */
+    background-image: url(./page4\ img.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: .5vmax;
+    transition: all 2s ease;
+}
+.page4-right-middel:hover{
+    transform: translateX(3vmax);
+    box-shadow: 0 0 .5vmax rgba(213, 193, 139, 0.589);
+}
+.page4-right-buttom{
+    width: 34vw;
+    height: 25vh;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+.page4-right-buttom-img1{
+    height: 22vh;
+    width: 18vw;
+    margin-right: 2vw;
+    /* background-color: wheat; */
+    background-image: url(https://i.pinimg.com/564x/b4/1d/5f/b41d5fe78732dc2bd763ca6605f0d948.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: .5vmax;
+    transition: all 2s ease;
+}
+.page4-right-buttom-img1:hover{
+    transform: translateY(3vmax);
+    box-shadow: 0 0 .5vmax rgba(213, 193, 139, 0.589);
+}
+.page4-right-buttom-img2{
+    height: 29vh;
+    width: 15vw;
+    margin-left: -2vw;
+    /* background-color: pink; */
+    background-image: url(https://i.pinimg.com/564x/b5/0b/2b/b50b2b0dd67272620b7b7ca1e13937b2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: .5vmax;
+    transition: all 2s ease;
+}
+.page4-right-buttom-img2:hover{
+    transform: translate(3vmax , 3vmax);
+    box-shadow: 0 0 .5vmax rgba(213, 193, 139, 0.589);
+}
+/* ============== PAGE-4 COMPLETE ============== */
+
+/* ============== PAGE-5 START ============== */
+
+.page5{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: azure; */
+}
+.page5-contener{
+    border-radius: 0.5vmax;
+    height: 50vh;
+    width: 60%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    backdrop-filter: blur(1vmax);
+    background: linear-gradient(to top right, rgba(0, 0, 0, 0.384),rgba(0, 0, 0, 0.151),rgba(218, 208, 121, 0.212));
+}
+.page5-info{
+    height: 50vh;
+    width: 59%;
+    /* background-color: black; */
+}
+.page5-info >h1{
+    margin-left: 1.5vmax;
+    font-size: 3vmax;
+    color: rgb(252,227,0);
+    text-shadow: .2vmax .2vmax .2vmax rgba(252, 227, 0, 0.548);
+    font-family: 'Ysabeau Office', sans-serif;
+
+}
+.page5-info >p{
+    margin-left: 1.5vmax;
+    color: rgb(218, 208, 121);
+    font-size: 1.3vmax;
+    /* backdrop-filter: blur(1vmax); */
+    padding-top: 2vh;
+    line-height: 1.5vmax;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.page5-info >p >span{
+    color: rgb(252,227,0);
+    font-weight: 500;
+    font-size: 1.5;
+}
+.page5-contener-image{
+    border-radius: 0.5vmax;
+    height: 60vh;
+    width: 35%;
+    margin-top: -5vh;
+    margin-right: 4vh;
+    /* background-color: red; */
+    background-image: url(https://i.pinimg.com/564x/fd/8d/10/fd8d1037cd5369fb6f573c5a7151d4b4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ============== PAGE-5 COMPLETE ============== */
+
+/* ============== PAGE-6 START ============== */
+
+.page6{
+    height: 100vh;
+    width: 100%;
+    /* background-color: aquamarine; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page6-contener{
+    border-radius: 0.5vmax;
+    height: 50vh;
+    width: 60%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: start;
+    justify-content: space-between;
+    backdrop-filter: blur(1vmax);
+    background: linear-gradient(to bottom left, rgba(0, 0, 0, 0.384),rgba(0, 0, 0, 0.151),rgba(218, 208, 121, 0.212));   
+    /* background-color: red; */
+}
+.page6-info{
+    height: 50vh;
+    width: 59%;
+    /* background-color: gray; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.page6-info >h1{
+    font-size: 1.8vmax;
+    line-height: 1.8vmax;
+    text-align: center;
+    color: rgb(213,193,139);
+    /* background-color: orchid; */
+    /* text-shadow: .2vmax .2vmax .1vmax rgba(213, 193, 139, 0.589); */
+    font-family: 'Ysabeau Office', sans-serif;
+
+}
+.page6-info >form{
+    /* background-color: olivedrab; */
+    height: 30vh;
+    width: 20vw;
+    
+}
+.page6-info >form >input{
+    margin-bottom: 1vh;
+    padding: 0.5vmax 3.7vmax;
+    text-align: center;
+    border-radius: 0.5vmax;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    background-color:  rgb(213,193,139);
+}
+.page6-info >form >input::placeholder{
+    color: black;
+}
+.page6-info >form >button{
+    padding: 0.5vmax 3vmax;
+    margin-left: 10vmax;
+    margin-top: 0.5vmax;
+    border-radius: 0.5vmax;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    font-family: 'Ysabeau Office', sans-serif;
+    background-color:  rgb(213,193,139);
+
+}
+.page6-icon{
+    font-size: 2vmax;
+    text-align: center;
+    margin-top: 1.5vmax;
+    /* background-color: rebeccapurple; */
+    color: rgb(213,193,139);
+}
+.page6-icon >i{
+    background-color: rgba(0, 0, 0, 0.274);
+    padding: 0.4vmax;
+    border-radius: 0.5vmax;
+    backdrop-filter: blur(1vmax);
+}
+.page6-image{
+    border-radius: 0.5vmax;
+    height: 60vh;
+    width: 35%;
+    margin-top: -5vh;
+    margin-left: 4vh;
+    /* background-color: red; */
+    background-image: url(./page6-image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.footer{
+    height: 50vh;
+    width: 100%;
+    /* background-color: pink; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.footer >ul >span{
+    font-weight: 900;
+    font-size: 2vmax;
+    color: rgb(213,193,139);
+}
+.footer >ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 0.7vmax;
+    color: rgba(213, 193, 139, 0.71);
+}
