@@ -33,7 +33,7 @@ nav{
     width: 100%;
     /* background-color: red; */
     display: flex;
-    
+    padding-right: 9.5vmax;
 }
 nav >ul{
     height: 8vh;
@@ -42,6 +42,7 @@ nav >ul{
     display: flex;
     list-style: none;
     align-items: center;
+    gap: 1.5vmax;
     justify-content: space-around;
 }
 nav >ul >li{
@@ -128,7 +129,7 @@ nav >ul >li >details >ul >li{
 }
 .page1-right >h1{
     padding-top: 25vh;
-    padding-left: 5vmax;
+    padding-left: 7vmax;
     /* background-color: palegreen; */
     font-size: 6vmax;
     text-shadow: .3vmax .3vmax .3vmax rgba(252, 227, 0, 0.39);
@@ -137,19 +138,19 @@ nav >ul >li >details >ul >li{
 
 }
 .page1-right >p{
-    margin-left: 10vmax;
+    margin-left: 7vmax;
     width: 35vmax;
     line-height: 1.3vmax;
     color: rgb(218, 208, 121);
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 1.1vmax;
     backdrop-filter: blur(1vmax);
-    font-family: 'Josefin Sans', sans-serif;
     /* background-color: palevioletred; */
     margin-top: 1.5vmax;
 }
 .page1-right >button{
     margin-top: 5vh;
-    margin-left: 3vmax;
+    margin-left: 7vmax;
     padding: 0.8vmax 1.5vmax;
     border: none;
     font-family: 'Ysabeau Office', sans-serif;
@@ -278,8 +279,8 @@ nav >ul >li >details >ul >li{
 }
 .page3-heading >h1{
     font-size: 4vmax;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgb(213,193,139);
+    font-family: 'Ysabeau Office', sans-serif;
+    color: yellow;
     text-shadow: .3vmax .3vmax .2vmax rgba(213, 193, 139, 0.322);
     font-weight: 700;
 }
@@ -326,7 +327,7 @@ nav >ul >li >details >ul >li{
     animation: boxtext 2s linear both;
 }
 .page3-box-discreption >h1{
-    color: rgb(155,159,160);
+    color: yellow;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 2.5vmax;
 }
@@ -433,7 +434,7 @@ nav >ul >li >details >ul >li{
 
 }
 .page4-left-hedding >h1{
-    color: rgb(213,193,139);
+    color: yellow;
     text-shadow: .2vmax .2vmax .1vmax rgba(213, 193, 139, 0.589);
     font-family: 'Ysabeau Office', sans-serif;
     font-size: 3.5vmax;
@@ -612,6 +613,7 @@ nav >ul >li >details >ul >li{
 .page5-info >p{
     margin-left: 1.5vmax;
     color: rgb(218, 208, 121);
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 1.3vmax;
     /* backdrop-filter: blur(1vmax); */
     padding-top: 2vh;
@@ -700,7 +702,7 @@ nav >ul >li >details >ul >li{
 }
 .page6-info >form >button{
     padding: 0.5vmax 3vmax;
-    margin-left: 10vmax;
+    margin-left: 5vmax;
     margin-top: 0.5vmax;
     border-radius: 0.5vmax;
     border: none;
@@ -739,7 +741,7 @@ nav >ul >li >details >ul >li{
 .footer{
     height: 50vh;
     width: 100%;
-    /* background-color: pink; */
+    background-color: black;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
